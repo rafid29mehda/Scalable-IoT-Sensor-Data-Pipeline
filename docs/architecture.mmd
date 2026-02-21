@@ -1,0 +1,6 @@
+graph LR
+    A["IoT Sensor Simulator\n(Python)"] -->|JSON messages| B["Apache Kafka\n(KRaft Mode)"]
+    B -->|Structured Streaming| C["PySpark\nStream Processor"]
+    C -->|Isolation Forest| D["Anomaly Detection\n(scikit-learn)"]
+    D -->|JDBC| E["PostgreSQL"]
+    E -->|SQL queries| F["Streamlit\nDashboard"]

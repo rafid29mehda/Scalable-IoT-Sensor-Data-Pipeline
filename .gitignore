@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+ml/model/*.joblib
+/tmp/spark-checkpoints/
+*.egg-info/
+dist/
+build/
+.DS_Store
+.claude/
